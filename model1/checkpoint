@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/huapinggu/Sources/NDCar/CarND-Traffic-Sign-Classifier-Project/model1/model"
+all_model_checkpoint_paths: "/Users/huapinggu/Sources/NDCar/CarND-Traffic-Sign-Classifier-Project/model1/model"
