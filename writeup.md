@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
-[//]: # (Image References)
+
 
 [image1]: ./test-results/visulization.png "Visualization"
 [image2]: ./test-results/top5.png "Top 5 Softmax"
@@ -23,6 +23,7 @@ The goals / steps of this project are the following:
 [image5]: ./test-results/y-class-histogram.png "Y class histogram"
 [image6]: ./test-results/augmentaion-compare.png "Augmentation compare"
 [image7]: ./test-results/LeNet.png "LeNet"
+
 
 Data Set Summary & Exploration
 -
@@ -71,7 +72,7 @@ My final model consisted of the following layers:
 
 Briefly I use LeNet to train the data, there are totally 5 layers of the network. Bellow is the overall architecture I used:
 
-![alt text] [image7]
+![alt text][image7]
 
 
 Bellow is the detail explanations:
@@ -101,9 +102,9 @@ Bellow is the detail explanations:
 
 
 To train the model, I used an softmax_cross_entropy_with)logits, and Adam Optimizer with following marameters:
-learning_rate = 0.001
-BATCH_SIZE = 128
-EPOCHS = 30
+        learning_rate = 0.001
+        BATCH_SIZE = 128
+        EPOCHS = 30
 
 
 My final model results were:
@@ -133,7 +134,7 @@ Test a Model on New Images
 
 I choose 10 german traffic signs downloaded from google. Following is the test results
 
-![alt text] [image3]
+![alt text][image3]
 
 
 The model was able to correctly guess 7 out of 10 traffic signs, which gives an accuracy of 70%. 
@@ -142,7 +143,7 @@ The model was able to correctly guess 7 out of 10 traffic signs, which gives an 
 
 With the top 5 softmax probilities, we can see how the model do the guessing. 
 
-![alt text] [image2]
+![alt text][image2]
 
 
 Optional Visualization
@@ -150,5 +151,5 @@ Optional Visualization
 
 I also did some trying in the optional question, and I can visualize the conv1 and conv2 layers data, bellow is one sample of one traffic sign:
 
-![alt text] [image1]
+![alt text][image1]
 
