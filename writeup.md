@@ -107,16 +107,18 @@ My **final model results** were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
-First I use the validation data from file, but I only can get about 89% validation accurrency. Then I change the strategy, to load 10% of the data from the training data as validation data.
-When augmenting the training data, I first compare the sample distribution, and mock up more data if the training traffic signs has less occurrences in the training dataset. This one do help remove the over fitting.
+    
+        First I use the validation data from file, but I only can get about 89% validation accurrency. Then I change the strategy, to load 10% of the data from the training data as validation data.
+        When augmenting the training data, I first compare the sample distribution, and mock up more data if the training traffic signs has less occurrences in the training dataset. This one do help remove the over fitting.
 
 
 * What were some problems with the initial architecture?
-Validation data should be similar as training data, otherwise the validation results will be low, and will not help judge the training quality.
+
+        Validation data should be similar as training data, otherwise the validation results will be low, and will not help judge the training quality.
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-After use the validation data from the training data, I can get 98%+ validation accurancy.
+
+        After use the validation data from the training data, I can get 98%+ validation accurancy.
 
 
  
