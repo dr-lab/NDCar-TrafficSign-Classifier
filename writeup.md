@@ -134,16 +134,18 @@ I choose 10 german traffic signs downloaded from google. Following is the test r
 The model was able to correctly guess 7 out of 10 traffic signs, which gives an test accuracy of **70%**. 
 
 **Image Qualities for testing**
-Since in the model, we transform the images with contrast and sharpen, which may impact the accuracy of the test ersults, especially depends on the test images' color contrasting.
-If the test image has good quality even if after sharpen and constract, then the test accuracy will be better.
+Since in the model, we transform the images with contrast and sharpen, which may impact the accuracy of the test results, especially depends on the test images' color contrasting.
+If the test image has good quality even if after sharpened and contrasted, then the test accuracy will be better.
 
 
 
-**Overfitting or Underfitting Discussion**
-Comparing the old test data set which accuracy is 81.6%, I think the reason that the real test images have low accuracy is because
-of the traffic signs selection. But may also a signal that my training is little overfitting.
-
-
+**Over-fitting or Under-fitting Discussion**
+Comparing the test data set got from the file which accuracy is 81.6%, I think the reason that the real test images have low accuracy is because
+of the speed limit traffic signs are not been classified correctly. Differences of "Speed limit signs" are only the digital numbers within the big circle, 
+and my classifier does not focus on the digital number, hence the accuracy of the 
+Speed Limit is NOT good in my classifier. In my test cases, speed limit signs are "70" and "100", which has one digit of shared "0".
+The image transform during the pre-processing should contribute the "Speed Limit Sign" classification since we use Sharpen and Constrasting which do remove some of the unique features of each sign.
+\
 
 
 With the **top 5 softmax probabilities**, we can see how the model do the guessing. 
