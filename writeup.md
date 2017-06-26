@@ -131,7 +131,7 @@ I choose 10 german traffic signs downloaded from google. Following is the test r
 ![alt text][image3]
 
 
-The model was able to correctly guess 7 out of 10 traffic signs, which gives an test accuracy of **70%&&. 
+The model was able to correctly guess 7 out of 10 traffic signs, which gives an test accuracy of **70%**. 
 
 
 
