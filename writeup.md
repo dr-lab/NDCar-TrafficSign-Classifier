@@ -133,6 +133,17 @@ I choose 10 german traffic signs downloaded from google. Following is the test r
 
 The model was able to correctly guess 7 out of 10 traffic signs, which gives an test accuracy of **70%**. 
 
+**Image Qualities for testing**
+Since in the model, we transform the images with contrast and sharpen, which may impact the accuracy of the test ersults, especially depends on the test images' color contrasting.
+If the test image has good quality even if after sharpen and constract, then the test accuracy will be better.
+
+
+
+**Overfitting or Underfitting Discussion**
+Comparing the old test data set which accuracy is 81.6%, I think the reason that the real test images have low accuracy is because
+of the traffic signs selection. But may also a signal that my training is little overfitting.
+
+
 
 
 With the **top 5 softmax probabilities**, we can see how the model do the guessing. 
