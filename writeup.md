@@ -1,9 +1,11 @@
-#**Traffic Sign Recognition** 
+Traffic Sign Recognition
+=
 
-
-**Build a Traffic Sign Recognition Project**
+Build a Traffic Sign Recognition Project
+-
 
 The goals / steps of this project are the following:
+
 * Load the data set (see below for links to the project data set)
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
@@ -22,8 +24,8 @@ The goals / steps of this project are the following:
 [image6]: ./test-results/augmentaion-compare.png "Augmentation compare"
 [image7]: ./test-results/LeNet.png "LeNet"
 
-###Data Set Summary & Exploration
-
+Data Set Summary & Exploration
+-
 
 I used the numpy library to calculate summary statistics of the traffic
 signs data set:
@@ -39,7 +41,8 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![alt text][image5]
 
-###Design and Test a Model Architecture
+Design and Test a Model Architecture
+-
 
 
 As a first step, I decided to convert the images to grayscale, but in my case I did not see better results, I skip the grayscaling. But I will some image manipulation in the data mock(augmentation) step.
@@ -53,6 +56,7 @@ Here is an example of an original image and an augmented image:
 ![alt text][image6]
 
 The difference between the original data set and the augmented data set is the following:
+
 1. the transformed image are processed by sharpening and increasing the contrasting
 2. The Augmented images are been rotated in a randomly angels
 
@@ -66,31 +70,32 @@ Finally the augmented traffic sign training data histogram char is as bellow:
 My final model consisted of the following layers:
 
 Briefly I use LeNet to train the data, there are totally 5 layers of the network. Bellow is the overall architecture I used:
+
 ![alt text] [image7]
 
 
 Bellow is the detail explanations:
-**Input**
-
-| Input         		| 32x32x3 RGB image   							| 
-
-**Layer1**
-| Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	|
-| Max pooling	      	| 2x2 stride,  outputs 14x14x6				    |
-
-
-**Layer2**
-| Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   |
-| Max pooling	      	| 2x2 stride,  outputs 5x5x6				    |
-
-**Layer3**
-| Fully connected RELU  | output is 120     			  			    |
-
-**Layer4**
-| Fully connected RELU  | output is 84     		    	  			    |
-
-**Layer5**
-| Fully connected Softmax| output is 43									|
+        **Input**
+        
+        | Input         		| 32x32x3 RGB image   							| 
+        
+        **Layer1**
+        | Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	|
+        | Max pooling	      	| 2x2 stride,  outputs 14x14x6				    |
+        
+        
+        **Layer2**
+        | Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   |
+        | Max pooling	      	| 2x2 stride,  outputs 5x5x6				    |
+        
+        **Layer3**
+        | Fully connected RELU  | output is 120     			  			    |
+        
+        **Layer4**
+        | Fully connected RELU  | output is 84     		    	  			    |
+        
+        **Layer5**
+        | Fully connected Softmax| output is 43									|
 
  
 
@@ -123,9 +128,11 @@ After use the validation data from the training data, I can get 98%+ validation 
 
  
 
-###Test a Model on New Images
+Test a Model on New Images
+-
 
 I choose 10 german traffic signs downloaded from google. Following is the test results
+
 ![alt text] [image3]
 
 
@@ -133,12 +140,15 @@ The model was able to correctly guess 7 out of 10 traffic signs, which gives an 
 
 
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
 With the top 5 softmax probilities, we can see how the model do the guessing. 
+
 ![alt text] [image2]
 
 
+Optional Visualization
+-
+
 I also did some trying in the optional question, and I can visualize the conv1 and conv2 layers data, bellow is one sample of one traffic sign:
+
 ![alt text] [image1]
 
