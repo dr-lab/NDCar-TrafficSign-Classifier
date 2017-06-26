@@ -131,11 +131,11 @@ I choose 10 german traffic signs downloaded from google. Following is the test r
 ![alt text][image3]
 
 
-The model was able to correctly guess 7 out of 10 traffic signs, which gives an accuracy of 70%. 
+The model was able to correctly guess 7 out of 10 traffic signs, which gives an test accuracy of **70%&&. 
 
 
 
-With the top 5 softmax probilities, we can see how the model do the guessing. 
+With the **top 5 softmax probabilities**, we can see how the model do the guessing. 
 
 ![alt text][image2]
 
