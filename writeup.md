@@ -76,38 +76,31 @@ Briefly I use LeNet to train the data, there are totally 5 layers of the network
 
 
 Bellow is the detail explanations:
-        **Input**
-        
-         Input         		| 32x32x3 RGB image   							
-        
-        **Layer1**
-         Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	
-         Max pooling	      	| 2x2 stride,  outputs 14x14x6				    
-        
-        
-        **Layer2**
-         Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   
-         Max pooling	      	| 2x2 stride,  outputs 5x5x6				    
-        
-        **Layer3**
-         Fully connected RELU  | output is 120     			  			    
-        
-        **Layer4**
-         Fully connected RELU  | output is 84     		    	  			    
-        
-        **Layer5**
-         Fully connected Softmax| output is 43									
 
- 
+        
+0. **Input**         		| 32x32x3 RGB image   							
+1. **Layer1**
+ Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	
+ Max pooling	      	| 2x2 stride,  outputs 14x14x6				    
+2. **Layer2**
+ Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   
+ Max pooling	      	| 2x2 stride,  outputs 5x5x6				    
+3. **Layer3**
+ Fully connected RELU  | output is 120     			  			    
+4. **Layer4**
+ Fully connected RELU  | output is 84     		    	  			    
+5. **Layer5**
+ Fully connected Softmax| output is 43									
 
 
-To train the model, I used an softmax_cross_entropy_with)logits, and Adam Optimizer with following marameters:
+
+To train the model, I used the **softmax_cross_entropy_with_logits**, and **Adam Optimizer** with following parameters:
         learning_rate = 0.001
         BATCH_SIZE = 128
         EPOCHS = 30
 
 
-My final model results were:
+My **final model results** were:
 * training set accuracy of 98.1%
 * validation set accuracy of 93.8%
 * test set accuracy of 81.6%
@@ -115,7 +108,6 @@ My final model results were:
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 First I use the validation data from file, but I only can get about 89% validation accurrency. Then I change the strategy, to load 10% of the data from the training data as validation data.
-
 When augmenting the training data, I first compare the sample distribution, and mock up more data if the training traffic signs has less occurrences in the training dataset. This one do help remove the over fitting.
 
 
