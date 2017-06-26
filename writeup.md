@@ -78,25 +78,25 @@ Briefly I use LeNet to train the data, there are totally 5 layers of the network
 Bellow is the detail explanations:
         **Input**
         
-        | Input         		| 32x32x3 RGB image   							| 
+         Input         		| 32x32x3 RGB image   							
         
         **Layer1**
-        | Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	|
-        | Max pooling	      	| 2x2 stride,  outputs 14x14x6				    |
+         Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	
+         Max pooling	      	| 2x2 stride,  outputs 14x14x6				    
         
         
         **Layer2**
-        | Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   |
-        | Max pooling	      	| 2x2 stride,  outputs 5x5x6				    |
+         Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   
+         Max pooling	      	| 2x2 stride,  outputs 5x5x6				    
         
         **Layer3**
-        | Fully connected RELU  | output is 120     			  			    |
+         Fully connected RELU  | output is 120     			  			    
         
         **Layer4**
-        | Fully connected RELU  | output is 84     		    	  			    |
+         Fully connected RELU  | output is 84     		    	  			    
         
         **Layer5**
-        | Fully connected Softmax| output is 43									|
+         Fully connected Softmax| output is 43									
 
  
 
