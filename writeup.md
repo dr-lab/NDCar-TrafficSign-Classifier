@@ -66,28 +66,32 @@ Finally the augmented traffic sign training data histogram char is as bellow:
 My final model consisted of the following layers:
 
 Briefly I use LeNet to train the data, there are totally 5 layers of the network. Bellow is the overall architecture I used:
-![text] [image7]
+![alt text] [image7]
 
 
 Bellow is the detail explanations:
+**Input**
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
 
+**Layer1**
 | Convolution 3x3     	| 1x1 stride, VALID padding, outputs 28x28x6 	|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6				    |
 
+
+**Layer2**
 | Convolution 3x3	    | 1x1 stride, VALID padding, outputs 10x10x16   |
 | Max pooling	      	| 2x2 stride,  outputs 5x5x6				    |
 
+**Layer3**
 | Fully connected RELU  | output is 120     			  			    |
 
+**Layer4**
 | Fully connected RELU  | output is 84     		    	  			    |
 
+**Layer5**
 | Fully connected Softmax| output is 43									|
-|						|												|
-|						|												|
+
  
 
 
@@ -122,7 +126,7 @@ After use the validation data from the training data, I can get 98%+ validation 
 ###Test a Model on New Images
 
 I choose 10 german traffic signs downloaded from google. Following is the test results
-![test] [image3]
+![alt text] [image3]
 
 
 The model was able to correctly guess 7 out of 10 traffic signs, which gives an accuracy of 70%. 
@@ -132,9 +136,9 @@ The model was able to correctly guess 7 out of 10 traffic signs, which gives an 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 With the top 5 softmax probilities, we can see how the model do the guessing. 
-![text] [image2]
+![alt text] [image2]
 
 
 I also did some trying in the optional question, and I can visualize the conv1 and conv2 layers data, bellow is one sample of one traffic sign:
-![text] [image1]
+![alt text] [image1]
 
